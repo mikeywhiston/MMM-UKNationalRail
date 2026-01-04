@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mattdy/MMM-UKNationalRail#readme",
   "dependencies": {
-    "national-rail-darwin": "^1.0.8"
+    "sync-request": "^6.1.0"
   },
   "devDependencies": {
     "eslint": "^7.9.0",

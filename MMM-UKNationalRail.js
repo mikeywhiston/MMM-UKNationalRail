@@ -18,6 +18,7 @@ Module.register("MMM-UKNationalRail", {
 
     station: "", // CRS code for station
     token: "", // API token from http://realtime.nationalrail.co.uk/OpenLDBWSRegistration
+    base_url: "https://api1.raildata.org.uk/1010-live-departure-board-dep1_2/LDBWS/api/20220120/GetDepBoardWithDetails",
 
     filterDestination: [], // CRS code for station - only display departures calling here
     filterCancelled: false, // Filter out cancelled departures
@@ -269,6 +270,13 @@ Module.register("MMM-UKNationalRail", {
     if (payload.id !== this.identifier) return;
     switch (notification) {
       case "UKNR_DATA":
+        // configure for times where trains might not be running
+        if (!payload.result.trainServices) {
+          this.trains = [];
+          this.loaded = true;
+          this.updateDom(this.config.animationSpeed);
+          return;
+        }
         this.processTrains(payload.result.trainServices);
         break;
     }
