@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mattdy/MMM-UKNationalRail#readme",
   "dependencies": {
-    "sync-request": "^6.1.0"
+    "axios": "^1.13.2"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
