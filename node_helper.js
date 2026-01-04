@@ -42,6 +42,7 @@ module.exports = NodeHelper.create({
 		//     }
 		//   }
 		// );
+		const crs = this.config[id].station;
 		const url = `https://api1.raildata.org.uk/1010-live-departure-board-dep1_2/LDBWS/api/20220120/GetDepBoardWithDetails/${crs}`;
 
 		try {
