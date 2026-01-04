@@ -19,7 +19,6 @@ module.exports = NodeHelper.create({
 
     this.started = false;
     this.config = {};
-    this.rail = null;
   },
 
   getTimetable: function (id) {
@@ -91,8 +90,7 @@ module.exports = NodeHelper.create({
           delete config.filterDestination;
         }
 
-        this.rail = new Rail(this.config[payload.id].token);
-
+        
         this.sendSocketNotification("UKNR_STARTED", true);
         this.getTimetable(payload.id);
         this.started = true;
