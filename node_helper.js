@@ -11,7 +11,7 @@
 
 const NodeHelper = require("node_helper");
 const Log = require("../../js/logger");
-const request = require("sync-request");
+const axios = require("axios");
 
 module.exports = NodeHelper.create({
   start: function () {
@@ -49,7 +49,7 @@ module.exports = NodeHelper.create({
     const crs = this.config[id].station;
     const res = request(
       "GET", 
-      `${this.config[id].base_url}/${crs}`,
+      `https://api1.raildata.org.uk/1010-live-departure-board-dep1_2/LDBWS/api/20220120/GetDepBoardWithDetails/${crs}`,
       {
         headers: {
           "Accept": "application/json",

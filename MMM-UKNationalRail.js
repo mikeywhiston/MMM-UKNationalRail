@@ -18,8 +18,7 @@ Module.register("MMM-UKNationalRail", {
 
     station: "", // CRS code for station
     token: "", // API token from http://realtime.nationalrail.co.uk/OpenLDBWSRegistration
-    base_url: "https://api1.raildata.org.uk/1010-live-departure-board-dep1_2/LDBWS/api/20220120/GetDepBoardWithDetails",
-
+  
     filterDestination: [], // CRS code for station - only display departures calling here
     filterCancelled: false, // Filter out cancelled departures
     filterFirstStop: [], // Filter for trains whose first stop is listed

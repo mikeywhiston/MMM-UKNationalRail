@@ -1,5 +1,5 @@
 # MMM-UKNationalRail
-This module was **modified** in order to support a custom URL - this is so that the Rail Data Marketplace LDBWS Data Product can be used alternatively as opposed to the legacy Open Rail Data LBDWS API.
+This module was **modified** in order to support the Rail Data Marketplace version of LDBWS as opposed to the legacy Open Data version of LDBWS.
 
 # Module: UKNationalRail
 
