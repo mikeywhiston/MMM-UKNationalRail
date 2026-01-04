@@ -1,6 +1,5 @@
 # MMM-UKNationalRail
-
-Additional Module for MagicMirror² https://github.com/MichMich/MagicMirror
+This module was **modified** in order to support a custom URL - this is so that the Rail Data Marketplace LDBWS Data Product can be used alternatively as opposed to the legacy Open Rail Data LBDWS API.
 
 # Module: UKNationalRail
 
