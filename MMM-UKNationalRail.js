@@ -249,8 +249,8 @@ Module.register("MMM-UKNationalRail", {
       // Add this train to our list
       this.trains.push({
         platform: train.platform !== undefined ? train.platform : "",
-        destination: train.destination.name,
-        origin: train.origin.name,
+        destination: train.destination.locationName,
+        origin: train.origin.locationName,
         dep_scheduled: train.std,
         dep_estimated: train.etd,
         status: status,
