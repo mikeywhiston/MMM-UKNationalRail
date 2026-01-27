@@ -246,6 +246,9 @@ Module.register("MMM-UKNationalRail", {
         status = "Late";
       }
 
+      // truthfully, the origin field here is unhelpful
+      train.origin[0].locationName = "";
+
       // Add this train to our list
       this.trains.push({
         platform: train.platform !== undefined ? train.platform : "",
